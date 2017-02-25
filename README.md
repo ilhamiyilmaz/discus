@@ -1,3 +1,3 @@
 # discus
 
-<h1>Discus</h1>
+* Tasarým 1 Eklendi

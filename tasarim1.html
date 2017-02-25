@@ -1,0 +1,676 @@
+
+<!DOCTYPE html>
+<html lang="tr" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="utf-8" />
+    <title>Tasarým</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="apple-touch-icon" sizes="57x57" href="http://demo1.karayeltasarim.com/Content/Tema/Standart/fav/apple-icon-57x57.png" />
+    <link rel="apple-touch-icon" sizes="60x60" href="http://demo1.karayeltasarim.com/Content/Tema/Standart/fav/apple-icon-60x60.png" />
+    <link rel="apple-touch-icon" sizes="72x72" href="http://demo1.karayeltasarim.com/Content/Tema/Standart/fav/apple-icon-72x72.png" />
+    <link rel="apple-touch-icon" sizes="76x76" href="http://demo1.karayeltasarim.com/Content/Tema/Standart/fav/apple-icon-76x76.png" />
+    <link rel="apple-touch-icon" sizes="114x114" href="http://demo1.karayeltasarim.com/Content/Tema/Standart/fav/apple-icon-114x114.png" />
+    <link rel="apple-touch-icon" sizes="120x120" href="http://demo1.karayeltasarim.com/Content/Tema/Standart/fav/apple-icon-120x120.png" />
+    <link rel="apple-touch-icon" sizes="144x144" href="http://demo1.karayeltasarim.com/Content/Tema/Standart/fav/apple-icon-144x144.png" />
+    <link rel="apple-touch-icon" sizes="152x152" href="http://demo1.karayeltasarim.com/Content/Tema/Standart/fav/apple-icon-152x152.png" />
+    <link rel="apple-touch-icon" sizes="180x180" href="http://demo1.karayeltasarim.com/Content/Tema/Standart/fav/apple-icon-180x180.png" />
+    <link rel="icon" type="image/png" sizes="192x192" href="http://demo1.karayeltasarim.com/Content/Tema/Standart/fav/android-icon-192x192.png" />
+    <link rel="icon" type="image/png" sizes="32x32" href="http://demo1.karayeltasarim.com/Content/Tema/Standart/fav/favicon-32x32.png" />
+    <link rel="icon" type="image/png" sizes="96x96" href="http://demo1.karayeltasarim.com/Content/Tema/Standart/fav/favicon-96x96.png" />
+    <link rel="icon" type="image/png" sizes="16x16" href="http://demo1.karayeltasarim.com/Content/Tema/Standart/fav/favicon-16x16.png" />
+    <meta name="msapplication-TileColor" content="#ffffff" />
+    <meta name="msapplication-TileImage" content="http://demo1.karayeltasarim.com/Content/Tema/Standart/fav/ms-icon-144x144.png" />
+    <meta name="theme-color" content="#ffffff" />
+    <style>
+        .loader.yuklendi {
+            display: none;
+        }
+
+        .loader {
+            background: #000000;
+            width: 100%;
+            height: 100vh;
+            display: table;
+            position: fixed;
+            z-index: 9999;
+            top: 0;
+            left: 0;
+            text-align: center;
+        }
+
+            .loader .loader_content { /*display: table-cell; vertical-align: middle;*/
+                position: absolute;
+                margin: auto;
+                top: 0;
+                bottom: 0;
+                left: 0;
+                right: 0;
+                width: 450px;
+                height: 100px;
+            }
+
+        body {
+            overflow: hidden;
+            height: 100vh;
+        }
+
+            body.yuklendi {
+                height: auto;
+                overflow: visible;
+            }
+        /*#nereye { color: #fff; font-family: sans-serif; min-height: 20px; margin-top: 10px; display: block; }*/
+    </style>
+    <script src="https://apis.google.com/js/platform.js" async defer> { lang: 'tr' } </script>
+    <script> function yuklendi() { var d = document.getElementById("yukle"); d.className += " yuklendi"; var b = document.getElementById("body"); b.className += " yuklendi"; } window.onload = yuklendi; </script>
+</head>
+<body id="body" class="kts-one">
+    <div id="yukle" class="loader">
+        <div class="loader_content">
+            <img src="http://demo1.karayeltasarim.com/Content/Tema/Standart/images/logo-invert.png" />
+        </div>
+    </div>
+    <div id="fb-root"></div>
+    <script> (function (d, s, id) { var js, fjs = d.getElementsByTagName(s)[0]; if (d.getElementById(id)) return; js = d.createElement(s); js.id = id; js.src = "//connect.facebook.net/en_GB/sdk.js#xfbml=1&version=v2.6"; fjs.parentNode.insertBefore(js, fjs); }(document, 'script', 'facebook-jssdk')); </script>
+    <section class="">
+        <section class="menubg">
+            <div class="container hidden-xs">
+                <div class="row">
+                    <div class="col-sm-3 logo">
+                        <a href="/tr"><img src="http://demo1.karayeltasarim.com/Content/Tema/Standart/images/logo.png" class="img-responsive" /></a>
+                    </div>
+                    <div class="col-sm-5 text-right">
+                        <h1 class="parisienne"> Slogan Buraya Gelsin! </h1>
+                    </div>
+                    <div class="col-sm-4">
+                        <div class="sosyalmeydan">
+                            <a target="_blank" href="https://www.facebook.com/KarayelTasarim/"><i class="fa fa-facebook-square"></i></a>
+                            <a target="_blank" href="#"><i class="fa fa-twitter-square"></i></a>
+                            <a target="_blank" href="#"><i class="fa fa-google-plus-square"></i></a>
+                            <a target="_blank" href="#"><i class="fa fa-instagram"></i></a>
+                        </div>
+                        <div class="iletisim mr15">
+                            <a href="tel:+90 242 344 10 20"><i class="fa fa-phone"></i> +90 242 344 10 20</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <div class="container-fluid navbg sabitmenu2">
+            <div class="row">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-md-9">
+                            <nav class="navbar">
+                                <div class="container-fluid">
+                                    <div class="navbar-header visible-xs">
+                                        <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false"><span class="sr-only">Toggle navigation</span><span class="icon-bar"></span><span class="icon-bar"></span><span class="icon-bar"></span></button>
+                                        <a class="navbar-brand" href="/tr"><img src="http://demo1.karayeltasarim.com/Content/Tema/Standart/images/logo.png" /></a>
+                                    </div>
+                                    <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+                                        <ul class="nav navbar-nav navbar-left">
+                                            <li>
+                                                <a href="/tr"> Anasayfa </a>
+                                            </li>
+                                            <li>
+                                                <a href="http://demo1.karayeltasarim.com/tr/kurumsal.html">Kurumsal</a>
+                                            </li>
+                                            <li>
+                                                <a href="http://demo1.karayeltasarim.com/tr/m/urunlerimiz">Ürünlerimiz</a>
+                                            </li>
+                                            <li>
+                                                <a href="http://demo1.karayeltasarim.com/tr/fg/referanslarimiz.html">Referanslarýmýz</a>
+                                            </li>
+                                            <li>
+                                                <a href="http://demo1.karayeltasarim.com/tr/fg/foto-galeri.html">Foto Galeri</a>
+                                            </li>
+                                            <li>
+                                                <a href="http://demo1.karayeltasarim.com/tr/iletisim.html">Ýletiþim</a>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </nav>
+                        </div>
+                        <div class="col-md-3 col-xs-12 hidden-xs">
+                            <form class="aramazsanArama" method="post" action="http://demo1.karayeltasarim.com/tr/Arama">
+                                <div class="input-group">
+                                    <input type="text" class="form-control" placeholder="Arama..." name="q" id="q">
+                                    <span class="input-group-btn"><button class="btn btn-default" type="submit"><i class="fa fa-search" aria-hidden="true"></i></button></span>
+                                </div>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="">
+        <div class="container-fluid">
+            <div class="row">
+                <div id="myCarousel" class="carousel slide" data-ride="carousel">
+                    <div class="carousel-inner" role="listbox">
+                        <div class="item active">
+                            <div class="slideholder" style="background-image: url(http://demo1.karayeltasarim.com/Resim/Slayt/slayt636117929713821612.jpg)">
+                                <div class="container">
+                                    <div class="row">
+                                        <div class="col-lg-6 col-md-6 metinkontrol wow fadeIn" data-wow-duration=".5s" data-wow-delay=".3s">
+                                            <div class="slidemetin tip-tablo">
+                                                <div class="hucre hucre-ortala">
+                                                    <h3> Deneme Baþlýk </h3>
+                                                    <p> Lorem Ipsum pasajlarýnýn bir&#231;ok &#231;eþitlemesi vardýr. Ancak bunlarýn b&#252;y&#252;k bir &#231;oðunluðu mizah katýlarak veya rastgele s&#246;zc&#252;kler eklenerek deðiþtirilmiþlerdir. </p>
+                                                    <div class="text-right">
+                                                        <a class="btn btn-default slaytbutonu" href="#0"> TIKLAYIN! </a>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="item">
+                            <div class="slideholder" style="background-image: url(http://demo1.karayeltasarim.com/Resim/Slayt/slayt636117929795254307.jpg)"></div>
+                        </div>
+                    </div>
+                    <a class="left carousel-control" href="#myCarousel" role="button" data-slide="prev"><span class="" aria-hidden="true"><i class="fa fa-angle-left" aria-hidden="true"></i></span></a>
+                    <a class="right carousel-control" href="#myCarousel" role="button" data-slide="next"><span class="" aria-hidden="true"><i class="fa fa-angle-right" aria-hidden="true"></i></span></a>
+                </div>
+            </div>
+        </div>
+        <div class="container-fluid algelbg">
+            <div class="container pt30 pb30 algel">
+                <div class="row">
+                    <h1>Ürünlerimiz</h1>
+                </div>
+                <div class="row">
+                    <div class="col-md-3">
+                        <div class="indexobject">
+                            <a href="http://demo1.karayeltasarim.com/tr/m/urunlerimiz/urun1.html">
+                                <div class="imgholder" style="background-image: url(http://demo1.karayeltasarim.com/Resim/Upload/urun2.jpg);"></div>
+                            </a>
+                        </div>
+                        <div class="indexbas2">
+                            <div class="coverme3 tip-tablo">
+                                <a href="http://demo1.karayeltasarim.com/tr/m/urunlerimiz/urun1.html">
+                                    <h5>Ürün1</h5>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-3">
+                        <div class="indexobject">
+                            <a href="http://demo1.karayeltasarim.com/tr/m/urunlerimiz/urun2.html">
+                                <div class="imgholder" style="background-image: url(http://demo1.karayeltasarim.com/Resim/Upload/urun2.jpg);"></div>
+                            </a>
+                        </div>
+                        <div class="indexbas2">
+                            <div class="coverme3 tip-tablo">
+                                <a href="http://demo1.karayeltasarim.com/tr/m/urunlerimiz/urun2.html">
+                                    <h5>Ürün2</h5>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-3">
+                        <div class="indexobject">
+                            <a href="http://demo1.karayeltasarim.com/tr/m/urunlerimiz/urun3.html">
+                                <div class="imgholder" style="background-image: url(http://demo1.karayeltasarim.com/Resim/Upload/urun3.jpg);"></div>
+                            </a>
+                        </div>
+                        <div class="indexbas2">
+                            <div class="coverme3 tip-tablo">
+                                <a href="http://demo1.karayeltasarim.com/tr/m/urunlerimiz/urun3.html">
+                                    <h5>Ürün3</h5>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-3">
+                        <div class="indexobject">
+                            <a href="http://demo1.karayeltasarim.com/tr/m/urunlerimiz/urun4.html">
+                                <div class="imgholder" style="background-image: url(http://demo1.karayeltasarim.com/Resim/Upload/urun4.jpg);"></div>
+                            </a>
+                        </div>
+                        <div class="indexbas2">
+                            <div class="coverme3 tip-tablo">
+                                <a href="http://demo1.karayeltasarim.com/tr/m/urunlerimiz/urun4.html">
+                                    <h5>Ürün4</h5>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-3">
+                        <div class="indexobject">
+                            <a href="http://demo1.karayeltasarim.com/tr/m/urunlerimiz/urun5.html">
+                                <div class="imgholder" style="background-image: url(http://demo1.karayeltasarim.com/Resim/Upload/urun5.jpg);"></div>
+                            </a>
+                        </div>
+                        <div class="indexbas2">
+                            <div class="coverme3 tip-tablo">
+                                <a href="http://demo1.karayeltasarim.com/tr/m/urunlerimiz/urun5.html">
+                                    <h5>Ürün5</h5>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-3">
+                        <div class="indexobject">
+                            <a href="http://demo1.karayeltasarim.com/tr/m/urunlerimiz/urun6.html">
+                                <div class="imgholder" style="background-image: url(http://demo1.karayeltasarim.com/Resim/Upload/urun1.jpg);"></div>
+                            </a>
+                        </div>
+                        <div class="indexbas2">
+                            <div class="coverme3 tip-tablo">
+                                <a href="http://demo1.karayeltasarim.com/tr/m/urunlerimiz/urun6.html">
+                                    <h5>Ürün6</h5>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-3">
+                        <div class="indexobject">
+                            <a href="http://demo1.karayeltasarim.com/tr/m/urunlerimiz/urun7.html">
+                                <div class="imgholder" style="background-image: url(http://demo1.karayeltasarim.com/Resim/Upload/urun7.jpg);"></div>
+                            </a>
+                        </div>
+                        <div class="indexbas2">
+                            <div class="coverme3 tip-tablo">
+                                <a href="http://demo1.karayeltasarim.com/tr/m/urunlerimiz/urun7.html">
+                                    <h5>Ürün7</h5>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-3">
+                        <div class="indexobject">
+                            <a href="http://demo1.karayeltasarim.com/tr/m/urunlerimiz/urun8.html">
+                                <div class="imgholder" style="background-image: url(http://demo1.karayeltasarim.com/Resim/Upload/urun8.jpg);"></div>
+                            </a>
+                        </div>
+                        <div class="indexbas2">
+                            <div class="coverme3 tip-tablo">
+                                <a href="http://demo1.karayeltasarim.com/tr/m/urunlerimiz/urun8.html">
+                                    <h5>Ürün8</h5>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <section class="icon-split-timeline">
+            <div class="container">
+                <div class="col-md-12 text-center">
+                    <div class="row ist-header">
+                        <h2 class="text-uppercase text-bold">Referanslarýmýz</h2>
+                    </div>
+                </div>
+                <div class="col-md-12">
+                    <div class="row">
+                        <div class="col-md-6 text-right iconblock">
+                            <a href="http://demo1.karayeltasarim.com/tr/m/referanslarimiz/referans1.html">
+                                <div class="col-xs-10">
+                                    <h3 class="text-uppercase">Referans1</h3>
+                                    <p> Nereden Gelir? Yaygýn inancýn tersine, Lorem Ipsum rastgele sözcüklerden oluþmaz. Kökleri M.Ö. 45 tarihinden bu yana klasik Latin edebiyatýna kadar uzanan 2000 yýllýk bir geçmiþi vardýr. Virginia'daki Hampden-Sydney ...</p>
+                                </div>
+                                <div class="col-xs-2">
+                                    <div class="t-icon">
+                                        <i class="fa fa-angle-double-down" aria-hidden="true"></i>
+                                    </div>
+                                </div>
+                            </a>
+                        </div>
+                        <div class="col-md-6 text-left iconblock">
+                            <a href="http://demo1.karayeltasarim.com/tr/m/referanslarimiz/referans2.html">
+                                <div class="col-xs-2">
+                                    <div class="t-icon">
+                                        <i class="fa fa-angle-double-down" aria-hidden="true"></i>
+                                    </div>
+                                </div>
+                                <div class="col-xs-10">
+                                    <h3 class="text-uppercase">Referans2</h3>
+                                    <p> Lorem Ipsum Nedir? Lorem Ipsum, dizgi ve baský endüstrisinde kullanýlan mýgýr metinlerdir. Lorem Ipsum, adý bilinmeyen bir matbaacýnýn bir hurufat numune kitabý oluþturmak üzere bir yazý galerisini alarak karýþtýrdýðý ...</p>
+                                </div>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-md-6 text-right iconblock">
+                            <a href="http://demo1.karayeltasarim.com/tr/m/referanslarimiz/referans3.html">
+                                <div class="col-xs-10">
+                                    <h3 class="text-uppercase">Referans3</h3>
+                                    <p> Lorem Ipsum Nedir? Lorem Ipsum, dizgi ve baský endüstrisinde kullanýlan mýgýr metinlerdir. Lorem Ipsum, adý bilinmeyen bir matbaacýnýn bir hurufat numune kitabý oluþturmak üzere bir yazý galerisini alarak karýþtýrdýðý ...</p>
+                                </div>
+                                <div class="col-xs-2">
+                                    <div class="t-icon">
+                                        <i class="fa fa-angle-double-down" aria-hidden="true"></i>
+                                    </div>
+                                </div>
+                            </a>
+                        </div>
+                        <div class="col-md-6 text-left iconblock">
+                            <a href="http://demo1.karayeltasarim.com/tr/m/referanslarimiz/referans4.html">
+                                <div class="col-xs-2">
+                                    <div class="t-icon">
+                                        <i class="fa fa-angle-double-down" aria-hidden="true"></i>
+                                    </div>
+                                </div>
+                                <div class="col-xs-10">
+                                    <h3 class="text-uppercase">Referans4</h3>
+                                    <p> Lorem Ipsum Nedir? Lorem Ipsum, dizgi ve baský endüstrisinde kullanýlan mýgýr metinlerdir. Lorem Ipsum, adý bilinmeyen bir matbaacýnýn bir hurufat numune kitabý oluþturmak üzere bir yazý galerisini alarak karýþtýrdýðý ...</p>
+                                </div>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-md-6 text-right iconblock">
+                            <a href="http://demo1.karayeltasarim.com/tr/m/referanslarimiz/referans5.html">
+                                <div class="col-xs-10">
+                                    <h3 class="text-uppercase">Referans5</h3>
+                                    <p> Lorem Ipsum Nedir? Lorem Ipsum, dizgi ve baský endüstrisinde kullanýlan mýgýr metinlerdir. Lorem Ipsum, adý bilinmeyen bir matbaacýnýn bir hurufat numune kitabý oluþturmak üzere bir yazý galerisini alarak karýþtýrdýðý ...</p>
+                                </div>
+                                <div class="col-xs-2">
+                                    <div class="t-icon">
+                                        <i class="fa fa-angle-double-down" aria-hidden="true"></i>
+                                    </div>
+                                </div>
+                            </a>
+                        </div>
+                        <div class="col-md-6 text-left iconblock">
+                            <a href="http://demo1.karayeltasarim.com/tr/m/referanslarimiz/referans6.html">
+                                <div class="col-xs-2">
+                                    <div class="t-icon">
+                                        <i class="fa fa-angle-double-down" aria-hidden="true"></i>
+                                    </div>
+                                </div>
+                                <div class="col-xs-10">
+                                    <h3 class="text-uppercase">Referans6</h3>
+                                    <p> Lorem Ipsum Nedir? Lorem Ipsum, dizgi ve baský endüstrisinde kullanýlan mýgýr metinlerdir. Lorem Ipsum, adý bilinmeyen bir matbaacýnýn bir hurufat numune kitabý oluþturmak üzere bir yazý galerisini alarak karýþtýrdýðý ...</p>
+                                </div>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <style>
+            .kts-one .galeribir .imgholder {
+                height: 50vh;
+            }
+
+                .kts-one .galeribir .imgholder .coverme {
+                    height: 50vh;
+                }
+
+            .kts-one .galeribir .imgholder {
+                border: 0;
+            }
+
+                .kts-one .galeribir .imgholder .coverme {
+                    width: 100%;
+                }
+        </style>
+        <div class="container-fluid galeribir">
+            <div class="row">
+                <div class="col-sm-4 bs-nopadding text-center">
+                    <div class="imgholder" style="background-image: url(https://www.antalyawebtasarim.com/destek/resimler/placeholders/3.jpg);">
+                        <div class="coverme tip-tablo">
+                            <a class="hucre hucre-ortala" href="#0">
+                                <h5>Ýsim Gelecek</h5>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-sm-4 bs-nopadding text-center">
+                    <div class="imgholder" style="background-image: url(https://www.antalyawebtasarim.com/destek/resimler/placeholders/4.jpg);">
+                        <div class="coverme tip-tablo">
+                            <a class="hucre hucre-ortala" href="#0">
+                                <h5>Ýsim Gelecek</h5>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-sm-4 bs-nopadding text-center">
+                    <div class="imgholder" style="background-image: url(https://www.antalyawebtasarim.com/destek/resimler/placeholders/5.jpg);">
+                        <div class="coverme tip-tablo">
+                            <a class="hucre hucre-ortala" href="#0">
+                                <h5>Ýsim Gelecek</h5>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-sm-4 bs-nopadding text-center">
+                    <div class="imgholder" style="background-image: url(https://www.antalyawebtasarim.com/destek/resimler/placeholders/6.jpg);">
+                        <div class="coverme tip-tablo">
+                            <a class="hucre hucre-ortala" href="#0">
+                                <h5>Ýsim Gelecek</h5>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-sm-4 bs-nopadding text-center">
+                    <div class="imgholder" style="background-image: url(https://www.antalyawebtasarim.com/destek/resimler/placeholders/7.jpg);">
+                        <div class="coverme tip-tablo">
+                            <a class="hucre hucre-ortala" href="#0">
+                                <h5>Ýsim Gelecek</h5>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-sm-4 bs-nopadding text-center">
+                    <div class="imgholder" style="background-image: url(https://www.antalyawebtasarim.com/destek/resimler/placeholders/8.jpg);">
+                        <div class="coverme tip-tablo">
+                            <a class="hucre hucre-ortala" href="#0">
+                                <h5>Ýsim Gelecek</h5>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="">
+        <div class="container-fluid footer pt15 pb15">
+            <div class="container">
+                <div class="row">
+                    <div class="col-sm-6 col-md-3 fblock">
+                        <img src="http://demo1.karayeltasarim.com/Content/Tema/Standart/images/logo-invert.png" class="img-responsive" />
+                        <div class="calismasaatleri mt15">
+                            <div class="col-xs-12">
+                                <h5>ÇALIÞMA SAATLERÝ</h5>
+                                <p>
+                                    Pazartesi - Cuma:
+                                    <span> 8:30 - 18:00 </span>
+                                </p>
+                                <p>
+                                    Cumartesi:
+                                    <span> 8:30 - 13:00 </span>
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-sm-6 col-md-3 fblock">
+                        <div class="row bs-nopadding">
+                            <div class="col-xs-2 text-center">
+                                <i class="fa fa-map-marker"></i>
+                            </div>
+                            <div class="col-xs-10">
+                                <p> Fener Mah. 1989. Sk. Karayel Apt. No:4/1, 07050 Muratpaþa / ANTALYA </p>
+                            </div>
+                        </div>
+                        <div class="row bs-nopadding">
+                            <div class="col-xs-2 text-center">
+                                <i class="fa fa-phone"></i>
+                            </div>
+                            <div class="col-xs-10">
+                                <p>
+                                    <a href="tel:+90 242 344 10 20"> +90 242 344 10 20 </a>
+                                </p>
+                            </div>
+                        </div>
+                        <div class="row bs-nopadding">
+                            <div class="col-xs-2 text-center">
+                                <i class="fa fa-fax" aria-hidden="true"></i>
+                            </div>
+                            <div class="col-xs-10">
+                                <p> +90 242 344 10 20 </p>
+                            </div>
+                        </div>
+                        <div class="row bs-nopadding">
+                            <div class="col-xs-2 text-center">
+                                <i class="fa fa-envelope"></i>
+                            </div>
+                            <div class="col-xs-10">
+                                <p>
+                                    <a href="mailto:xxx@yyyyyyyy.com"> xxx@yyyyyyyy.com </a>
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-sm-6 col-md-3 fblock hidden-xs hidden-sm">
+                        <div class="row bs-nopadding">
+                            <div class="col-xs-1 text-center">
+                                <i class="fa fa-angle-right" aria-hidden="true"></i>
+                            </div>
+                            <div class="col-xs-10">
+                                <p>
+                                    <a href="/tr">Anasayfa </a>
+                                </p>
+                            </div>
+                        </div>
+                        <div class="row bs-nopadding">
+                            <div class="col-xs-1 text-center">
+                                <i class="fa fa-angle-right" aria-hidden="true"></i>
+                            </div>
+                            <div class="col-xs-10">
+                                <p>
+                                    <a href="http://demo1.karayeltasarim.com/tr/kurumsal.html"> Kurumsal</a>
+                                </p>
+                            </div>
+                        </div>
+                        <div class="row bs-nopadding">
+                            <div class="col-xs-1 text-center">
+                                <i class="fa fa-angle-right" aria-hidden="true"></i>
+                            </div>
+                            <div class="col-xs-10">
+                                <p>
+                                    <a href="http://demo1.karayeltasarim.com/tr/m/urunlerimiz">Ürünlerimiz</a>
+                                </p>
+                            </div>
+                        </div>
+                        <div class="row bs-nopadding">
+                            <div class="col-xs-1 text-center">
+                                <i class="fa fa-angle-right" aria-hidden="true"></i>
+                            </div>
+                            <div class="col-xs-10">
+                                <p>
+                                    <a href="http://demo1.karayeltasarim.com/tr/m/referanslarimiz">Referanslarýmýz</a>
+                                </p>
+                            </div>
+                        </div>
+                        <div class="row bs-nopadding">
+                            <div class="col-xs-1 text-center">
+                                <i class="fa fa-angle-right" aria-hidden="true"></i>
+                            </div>
+                            <div class="col-xs-10">
+                                <p>
+                                    <a href="http://demo1.karayeltasarim.com/tr/m/haberler">Haberler</a>
+                                </p>
+                            </div>
+                        </div>
+                        <div class="row bs-nopadding">
+                            <div class="col-xs-1 text-center">
+                                <i class="fa fa-angle-right" aria-hidden="true"></i>
+                            </div>
+                            <div class="col-xs-10">
+                                <p>
+                                    <a href="http://demo1.karayeltasarim.com/tr/iletisim.html">Ýletiþim</a>
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-sm-6 col-md-3 fblock">
+                        <div class="fb-page" data-href="https://www.facebook.com/KarayelTasarim/" data-small-header="false" data-adapt-container-width="true" data-hide-cover="false" data-show-facepile="true">
+                            <div class="fb-xfbml-parse-ignore">
+                                <blockquote cite="https://www.facebook.com/KarayelTasarim/"><a href="https://www.facebook.com/KarayelTasarim/">Tasarým</a></blockquote>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="container-fluid footerbot">
+            <div class="container">
+                <div class="col-sm-6 center-mobile"> © 2017, Tasarým. Tüm Haklarý Saklýdýr. </div>
+                <div class="col-sm-6 text-right center-mobile">
+                    <a href="http://www.karayeltasarim.com/" target="_blank" title="antalya web tasarým"><img src="http://demo1.karayeltasarim.com/Content/Tema/Standart/images/karayel.png" alt="web tasarým antalya" /></a>
+                </div>
+            </div>
+        </div>
+    </section>
+    <nav class="floating-nav hidden-lg">
+        <div class="wrapper">
+            <ul>
+                <li class="i1">
+                    <a href="tel:+90 242 344 10 20" data-type="self"><span class="hidden"></span></a>
+                </li>
+                <li class="i2">
+                    <a style="cursor: pointer" onclick="karayelNavFunc()" data-type="self"><span class="hidden"></span></a>
+                </li>
+                <li class="i3">
+                    <a href="/tr" data-type="self"><span class="hidden">ANASAYFA</span></a>
+                </li>
+                <li class="i4">
+                    <a class="fancybox2" href="#sosyal" title="SosyalMedya" data-type="self"><span class="hidden"></span></a>
+                </li>
+                <li class="i6 last">
+                    <a href="http://demo1.karayeltasarim.com/tr/iletisim.html" title="iletisim" data-type="self"><span class="hidden"></span></a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+    <div id="sosyal" style="width:100%; display: none;">
+        <h4>Bizi takip edin!</h4>
+        <div class="col-md-6">
+            <a target="_blank" href="https://www.facebook.com/KarayelTasarim/"><img src="https://www.antalyawebtasarim.com/destek/resimler/facebook.jpg" style="width: 100%;" /></a>
+        </div>
+        <div class="col-md-6">
+            <a target="_blank" href="#"><img src="https://www.antalyawebtasarim.com/destek/resimler/twitter.jpg" style="width: 100%;" /></a>
+        </div>
+        <div class="col-md-6">
+            <a target="_blank" href="#"><img src="https://www.antalyawebtasarim.com/destek/resimler/instagram.jpg" style="width: 100%;" /></a>
+        </div>
+        <div class="col-md-6">
+            <a target="_blank" href="#"><img src="https://www.antalyawebtasarim.com/destek/resimler/googleplus.jpg" style="width: 100%;" /></a>
+        </div>
+    </div>
+</body>
+</html>
+<link href="http://demo1.karayeltasarim.com/Content/Tema/Standart/css/font-fallback.css" rel="stylesheet" media="none" onload="if(media!='all')media='all'">
+<link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i,800,800i&amp;subset=latin-ext" rel="stylesheet" media="none" onload="if(media!='all')media='all'">
+<link href="https://fonts.googleapis.com/css?family=Parisienne&amp;subset=latin-ext" rel="stylesheet" media="none" onload="if(media!='all')media='all'">
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.0/jquery.min.js"></script>
+<link rel="stylesheet" href="https://www.antalyawebtasarim.com/destek/css/bootstrap.min.css" media="none" onload="if(media!='all')media='all'" />
+<link rel="stylesheet" href="https://www.antalyawebtasarim.com/destek/css/bootstrap-theme.min.css" media="none" onload="if(media!='all')media='all'" />
+<link rel="stylesheet" href="https://www.antalyawebtasarim.com/destek/css/karayel-v1_1.css" media="none" onload="if(media!='all')media='all'" />
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.1/css/font-awesome.min.css" media="none" onload="if(media!='all')media='all'">
+<link rel="stylesheet" type="text/css" href="https://www.antalyawebtasarim.com/destek/fancybox/source/jquery.fancybox.css?v=2.1.5" media="none" onload="if(media!='all')media='all'" />
+<link rel="stylesheet" type="text/css" href="https://www.antalyawebtasarim.com/destek/fancybox/source/helpers/jquery.fancybox-buttons.css?v=1.0.5" media="none" onload="if(media!='all')media='all'" />
+<link rel="stylesheet" type="text/css" href="https://www.antalyawebtasarim.com/destek/fancybox/source/helpers/jquery.fancybox-thumbs.css?v=1.0.7" media="none" onload="if(media!='all')media='all'" />
+<script src="https://www.antalyawebtasarim.com/destek/js/bootstrap.min.js"></script>
+<link href="https://www.antalyawebtasarim.com/destek/css/animate.css" rel="stylesheet" media="none" onload="if(media!='all')media='all'" />
+<link rel="stylesheet" href="https://www.antalyawebtasarim.com/destek/owl/assets/owl.carousel.css" media="none" onload="if(media!='all')media='all'" />
+<link rel="stylesheet" href="https://www.antalyawebtasarim.com/destek/owl/assets/owl.theme.default.css" media="none" onload="if(media!='all')media='all'" />
+<link href="http://demo1.karayeltasarim.com/Content/Tema/Standart/css/tema.css" rel="stylesheet" />
+<script> function karayelNavFunc() { if ((navigator.platform.indexOf("iPhone") != -1) || (navigator.platform.indexOf("iPod") != -1)) window.open("maps://maps.google.com/maps?q=36.854913,30.756816"); else window.open("http://maps.google.com/maps?q=36.854913,30.756816"); } </script>
+<script type="text/javascript" src="https://www.antalyawebtasarim.com/destek/fancybox/lib/jquery.mousewheel-3.0.6.pack.js" async></script>
+<script type="text/javascript" src="https://www.antalyawebtasarim.com/destek/fancybox/source/jquery.fancybox.js?v=2.1.5"></script>
+<script type="text/javascript" src="https://www.antalyawebtasarim.com/destek/fancybox/source/helpers/jquery.fancybox-thumbs.js?v=1.0.7" async></script>
+<script type="text/javascript" src="https://www.antalyawebtasarim.com/destek/fancybox/source/helpers/jquery.fancybox-media.js?v=1.0.6" async></script>
+<script src="https://www.antalyawebtasarim.com/destek/owl/owl.carousel.min.js"></script>
+<script src="https://www.antalyawebtasarim.com/destek/owl/owl.carousel2.thumbs.min.js"></script>
+<script src="https://www.antalyawebtasarim.com/destek/js/fitvids.js" async></script>
+<script src="https://www.antalyawebtasarim.com/destek/js/wow.min.js"></script>
+<script src="https://www.antalyawebtasarim.com/destek/js/karayel_v1.js"></script>
+<script src="http://demo1.karayeltasarim.com/Content/Tema/Standart/js/tema.js" async></script>
+<script> $("a").each(function () { /*sayfadaki tüm a etiketlerini toplayarak ilerle*/ var linkal = $(this).attr("href"); /*a'nýn yollarýný deðiþkene al*/ if (linkal !== undefined) { /*deðiþken tanýmsýz dönmüyorsa*/ if (linkal.indexOf("demo18") >= 0) { /*deðiþkenin içerisinde demo18 terimi geçiyorsa*/ linkal = linkal.replace("demo18", "demo17"); /*demo18 terimini demo17 ile deðiþtir*/ } } $(this).attr("href", linkal); /*bulunduðun yolu, deðiþtirilmiþ yol ile deðiþtir*/ }); </script> 
