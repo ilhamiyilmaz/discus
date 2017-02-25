@@ -1,3 +1,3 @@
-# discus
+﻿# discus
 
-* Tasar�m 1 Eklendi
+* Tasarım 1 Eklendi
